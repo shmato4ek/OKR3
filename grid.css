@@ -1,0 +1,97 @@
+body {
+    background: #ffe7d1;
+    font-family: Montserrat;
+    width: 100vw;
+    margin: auto;
+    display: grid;
+    grid-template-areas: "a b b"
+                         "a c d"
+                         "a e d"
+                         "f f f";
+}
+
+.h {
+	margin-top: 0.5em;
+    margin-left: 5vw;
+    margin-right: 5vw;
+	font-size: 5em;
+}
+
+.t {
+	margin-top: 0.5em;
+    margin-left: 2vw;
+    margin-right: 2vw;
+	font-size: 3em;
+}
+
+.button {
+	font-size: 1.5em;
+}
+
+.inp {
+	height: 5em;
+	width: 15em;
+}
+
+.t1{
+    background: #F296D0;
+    width: 24.9vw;
+    height: 90em;
+    grid-area: a;
+}
+
+.t4{
+    background: #4252FF;
+    width: 75vw;
+    height: 20em;
+    grid-area: b;
+}
+
+.header{
+	margin-top: 2.5em;
+    margin-left: 5vw;
+}
+
+.main-h{
+	margin-top: -1em;
+    margin-left: 37.5vw;
+}
+
+.t3{
+    background: #FFEF42;
+    width: 50vw;
+    height: 10em;
+    grid-area: c;
+}
+
+.t2{
+    background: #F296D0;
+    width: 25vw;
+    height: 70em;
+    grid-area: d;
+}
+
+.t5{
+    background: #99F9F1;
+    width: 50vw;
+    height: 60em;
+    grid-area: e;
+}
+
+.t6{
+    background: #4252FF;
+    width: 100vw;
+    height: 10em;
+    grid-area: f;
+}
+
+.footer{
+	margin-top: 1em;
+    margin-left: 5vw;
+}
+
+
+.f1{
+	margin-top: 1em;
+    margin-left: 60vw;
+}
