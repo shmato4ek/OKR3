@@ -1,6 +1,5 @@
 document.getElementById('b1').onclick = task1
 document.getElementById('b2').onclick = task2
-document.getElementById('b3').onclick = task3
 document.getElementById('b4').onclick = task4
 document.getElementById('b5').onfocus = task5_1
 document.getElementById('b5').onblur  = task5_2
@@ -44,15 +43,44 @@ function task2(){
     document.querySelector('.t5').querySelector('p').after('   S = ' + S + '   ')
 }
 
+function task3(){
+    let num = document.querySelector('#min_max').querySelector('input').value.split(' ')
+    let flag = true
+    for(let i = 0; i < num.length && flag; i++){
+        num[i] = +num[i]
+        if(!Number.isInteger(num[i])){flag = false}
+    }
+    if(num.length == 10 && flag){
+        let max = num[0]
+        for(let i = 0; i < num.length; i++){
+            num[i] = +num[i]
+            if(num[i] > max){max = num[i]}
+        }
+        let min = num[0]
+        for(let i = 0; i < num.length; i++){
+            num[i] = +num[i]
+            if(num[i] < min){min = num[i]}
+        }
+        setCookie('min',min)
+        setCookie('max',max)
+        alert('Max: ' + max + ' Min: ' + min)
+    }
+    else{
+        alert('You entered wrong data')
+        document.querySelector('#min_max').querySelector('input').value = ''
+    }
+}
+
 function task4(){
     const color = document.getElementById('border_color').querySelector('input').value
+	console.color;
     localStorage.setItem('border_color',color)
     paint()
 }	
 
 function paint(){
     const color = localStorage.getItem('border_color')
-    document.getElementById('text1').style.border = ['solid',0.3+'rem',color].join(' ')
+    document.querySelector('.t1').style.border = ['solid',0.3+'rem',color].join(' ')
     document.querySelector('.t2').style.border = ['solid',0.3+'rem',color].join(' ')
     document.querySelector('.t3').style.border = ['solid',0.3+'rem',color].join(' ')
     document.querySelector('.t4').style.border = ['solid',0.3+'rem',color].join(' ')

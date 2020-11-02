@@ -11,17 +11,24 @@ body {
 }
 
 .h {
-	margin-top: 0.5em;
-    margin-left: 5vw;
-    margin-right: 5vw;
+	padding-top: 0.5em;
+    padding-left: 5vw;
+    padding-right: 5vw;
 	font-size: 5em;
 }
 
 .t {
-	margin-top: 0.5em;
-    margin-left: 2vw;
-    margin-right: 2vw;
+	padding-top: 0.5em;
+    padding-left: 2vw;
+    padding-right: 2vw;
 	font-size: 3em;
+}
+
+.tt{
+	padding-top: 0.5em;
+    padding-left: 2vw;
+	font-size: 1.5em;
+	width: 8.7vw;
 }
 
 .button {
@@ -48,13 +55,13 @@ body {
 }
 
 .header{
-	margin-top: 2.5em;
-    margin-left: 5vw;
+	padding-top: 2.5em;
+    padding-left: 5vw;
 }
 
 .main-h{
-	margin-top: -1em;
-    margin-left: 37.5vw;
+    padding-left: 37.5vw;
+	font-size: 5em;
 }
 
 .t3{
@@ -86,12 +93,12 @@ body {
 }
 
 .footer{
-	margin-top: 1em;
-    margin-left: 5vw;
+	padding-top: 1em;
+    padding-left: 5vw;
 }
 
 
 .f1{
-	margin-top: 1em;
-    margin-left: 60vw;
+	padding-top: 1em;
+    padding-left: 60vw;
 }
